@@ -1,0 +1,441 @@
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Filippo Smedile</title>
+            <link rel="stylesheet" href="desktop.css">
+            <link rel="stylesheet" href="mobile.css">
+            <link rel="stylesheet" href="tablet.css">
+            <link rel="shortcut icon" href="images/logo-fs.svg" type="image/x-icon">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        </head>
+        <body id="top">
+
+            <header id="header">
+                <div class="container">
+                    <div id="logo">
+                        <a href="#top">
+                            <img src="images/logo-fs.svg" alt="logo" class="img-logo">
+                        </a>
+                    </div>
+                    <div id="header-links">
+                        <a href="#portfolio" class="header-link scale">Portfolio</a>
+                        <a href="#about" class="header-link scale">About</a>
+                        <a href="FilippoSmedileCV.pdf" class="header-link scale">Resume</a>
+                        <a href="#contact" class="header-link scale">Contact</a>
+                        <div id="switch-menu">
+                            <a type="button" id="mobile-menu-button" onclick="menuToggle()">
+                                <div id="line-1" class="mobile-line"></div>
+                                <div id="line-2"  class="mobile-line"></div>
+                                <div id="line-3"  class="mobile-line"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="mobile-menu">
+                <a href="#portfolio" class="header-link-mobile scale">Portfolio</a>
+                <a href="#about" class="header-link-mobile scale">About</a>
+                <a href="FilippoSmedileCV.pdf" class="header-link-mobile scale">Resume</a>
+                <a href="#contact" class="header-link-mobile scale">Contact</a>
+            </div>
+
+            <div id="main-div">
+                <div class="container" id="sub-main-div">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h1>
+                                Hey there, I am Filippo.
+                                <hr>
+                            </h1>
+                            <p>
+                                Full Stack Web Developer with a strong passion for coding.
+                                Based in Manchester, I make websites and web apps.
+                            </p> 
+                        </div>
+                    </div>                                
+                </div>
+            </div>
+
+            <div id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2>
+                                Featured Projects
+                                <hr>
+                            </h2>
+                        </div>
+                    </div>    
+
+                    <div class="row portfolio-project fade-in">
+                        <div class="col-md-6">
+                            <h2>
+                                Scialaj Restaurant
+                            </h2>                       
+                            <p>
+                                This website was designed for an Italian restaurant with WordPress, integrating a web app in a sub domain ("menu.scialaj.com").
+                                The client enjoys a fully responsive website with a straightfoward link to the menu on the homepage.
+                                The menu is made with laravel framework. The customer has his own admin panel where they can edit the items in the menu.
+                            </p>
+                            
+                            <br>
+
+                            <h3>
+                                Technical Skills:
+                            </h3>
+                            <p>HTML, CSS, SASS, javascript, jquery, bootstrap, PHP, laravel, WordPress and Elementor.</p>
+                            <div class="portfolio-icons">
+                                <a href="https:\\www.scialaj.com">
+                                    <img src="images/icons/link.svg" alt="link" class="portfolio-img-icon scale">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 project-right-side">
+                            <img src="images/scialaj.jpg" alt="" class="portfolio-img scale">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-md-8">
+                            <hr>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+
+                    <div class="row portfolio-project fade-in">
+                        <div class="col-md-6 project-right-side">
+                            <img src="images/ritrovosmedile.jpg" alt="" class="portfolio-img scale">
+                        </div>
+                        <div class="col-md-6">
+                            <h2>
+                                Ritrovo Smedile Coffe Shop
+                            </h2>                       
+                            <p>
+                                This website was made entirely with laravel and with mobile-first approach. 
+                                The website includes an admin panel where the customer can edit its style and the items 
+                                in the menu. Other features include: updating the opening times, uploading pictures on 
+                                the homepage, adding new products and offers on the homepage and much more.
+                            </p>
+                            <br>
+
+                            <h3>
+                                Technical Skills:
+                            </h3>
+                            <p>HTML, CSS, SASS, javascript, jquery, bootstrap, PHP, laravel.</p>
+                            <div class="portfolio-icons">
+                                <a href="https://ritrovosmedile-com.stackstaging.com/">
+                                    <img src="images/icons/link.svg" alt="link" class="portfolio-img-icon scale">
+                                </a>
+                                <a href="https://github.com/filipposmedile/restaurantApp">
+                                    <img src="images/icons/github.svg" alt="link" class="portfolio-img-icon scale">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row fade-in">
+                        <div class="col-md-4">
+                            <h2>
+                                Other Projects
+                                <hr>
+                            </h2>
+                        </div>
+                    </div> 
+                    <div id="other-projects" class="fade-in">                        
+                        <div class="other-project">
+                            <div class="other-project-header">
+                                <img src="images/filipposmedile.jpg" alt="" class="other-project-img">
+                            </div>
+                            <div class="other-project-body">
+                                <h4>
+                                    Filippo Smedile Website
+                                </h4>
+                                <h5>
+                                    Technical Skills:
+                                </h5>
+                                <p>
+                                    HTML, CSS, SASS, javascrip, jquery and boostrap.
+                                </p>                            
+                                <div class="portfolio-icons">
+                                    <a href="https://filipposmedile.com/">
+                                        <img src="images/icons/link.svg" alt="link" class="portfolio-img-icon scale">
+                                    </a>
+                                    <a href="https://github.com/filipposmedile/filipposmedilewebsite">
+                                        <img src="images/icons/github.svg" alt="link" class="portfolio-img-icon scale">
+                                    </a>
+                                </div>
+                            </div>                           
+                        </div>
+
+                        <div class="other-project">
+                            <div class="other-project-header">
+                                <img src="images/joetopgarden.jpg" alt="" class="other-project-img">
+                            </div>
+                            <div class="other-project-body">
+                                <h4>
+                                    Joe Top Garden
+                                </h4>
+                                <h5>
+                                    Technical Skills:
+                                </h5>
+                                <p>
+                                    HTML, CSS, WordPress and Elementor.
+                                </p>                            
+                                <div class="portfolio-icons">
+                                    <a href="https://www.joetopgardenandservices.com/">
+                                        <img src="images/icons/link.svg" alt="link" class="portfolio-img-icon scale">
+                                    </a>
+                                </div>
+                            </div>                           
+                        </div>
+
+                        <div class="other-project">
+                            <div class="other-project-header">
+                                <img src="images/mtlifecoach.jpg" alt="" class="other-project-img">
+                            </div>
+                            <div class="other-project-body">
+                                <h4>
+                                    MT Life Coach
+                                </h4>
+                                <h5>
+                                    Technical Skills:
+                                </h5>
+                                <p>
+                                    HTML, CSS, WordPress and Elementor.
+                                </p>                            
+                                <div class="portfolio-icons">
+                                    <a href="https://www.mtlifecoach.uk/">
+                                        <img src="images/icons/link.svg" alt="link" class="portfolio-img-icon scale">
+                                    </a>
+                                </div>
+                            </div>                           
+                        </div>
+
+                        <div class="other-project">
+                            <div class="other-project-header">
+                                <img src="images/smedilemario.jpg" alt="smedilemario" class="other-project-img">
+                            </div>
+                            <div class="other-project-body">
+                                <h4>
+                                    Impianti Elettrici Smedile
+                                </h4>
+                                <h5>
+                                    Technical Skills:
+                                </h5>
+                                <p>
+                                    HTML, CSS, WordPress and Elementor.
+                                </p>                            
+                                <div class="portfolio-icons">
+                                    <a href="https://smedileimpiantielettrici.com/">
+                                        <img src="images/icons/link.svg" alt="link" class="portfolio-img-icon scale">
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about" class="fade-in">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2>
+                                About Me
+                                <hr>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div id="description">
+                        <p class="description-text fade-in">
+                            <img src="images/fs2.JPG" alt="filipposmedile" class="description-img">
+
+                            I was born in Sicily, Italy, one of the most beautiful islands in the Mediterranean. When I lived there I really enjoyed
+                            the sun, the sea and the beautiful nature this land has to offer.
+                            <br>
+                            I have always showed passion for languages, music and IT. My love for coding began at school when
+                            I studied older programming languages such as Assembler and Pascal. 
+                            <br>
+                            After completing my A levels, I continued to study different programming languages and I worked
+                            on some projects. I have lived in England since 2012. I moved to different cities but I have lived mostly in London where I lived for 6 years. 
+                            In the past 2 years I have broadened my skills by studying new technologies, deepen my 
+                            knowledge and strenghen my skills.
+                            <br>
+                            At the moment I am working as a freelancer. Each time I work on a project I look after every 
+                            aspect of it. This means that I don't do just the coding part: all the logos, pictures and icons 
+                            are also made by me.
+                            <br>
+                            As a coding lover I never stop studying. In my free time I love watching and playing football and 
+                            my guitar is always next to my desk and ready to accompany me when belting out during a break. 
+                            My wife and I love learing about new cultures and discovering new places around the world by travelling.
+                        </p>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 fade-in">
+                            <h3>
+                                Education
+                                <hr>
+                            </h3>
+                            <p>
+                                ITIS G. MARCONI (Messina, Italy) <br>
+                                Diploma in Electronics and Telecommunications
+                            </p>
+                        </div>
+                    </div>   
+                    <div class="row fade-in">
+                        <div class="col-md-6">
+                            <h3>
+                                Skills
+                                <hr>
+                            </h3>
+                        </div>
+                    </div> 
+                    <div id="skillsets">
+                        <div class="row fade-in">
+                            <div class="col-md-4">
+                                <div class="skillset">
+                                    <h3>
+                                        General
+                                    </h3>
+                                    <span class="skill">
+                                        Frontend&nbspDeveloper
+                                    </span>
+                                    <span class="skill">
+                                        Backend&nbspDeveloper
+                                    </span>
+                                    <span class="skill">
+                                        Visual&nbspStudio&nbspCode
+                                    </span>
+                                    <span class="skill">
+                                        Xampp
+                                    </span>
+                                    <span class="skill">
+                                        GitHub
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="skillset">
+                                    <h3>
+                                        Engineering
+                                    </h3>
+                                    <span class="skill">
+                                        HTML/CSS
+                                    </span>
+                                    <span class="skill">
+                                        SASS
+                                    </span>
+                                    <span class="skill">
+                                        javascript
+                                    </span>
+                                    <span class="skill">
+                                        jquery
+                                    </span>
+                                    <span class="skill">
+                                        boostrap
+                                    </span>
+                                    <span class="skill">
+                                        react.js
+                                    </span>
+                                    <span class="skill">
+                                        PHP
+                                    </span>
+                                    <span class="skill">
+                                        MySQL
+                                    </span>
+                                    <span class="skill">
+                                        laravel
+                                    </span>
+                                    <span class="skill">
+                                        WordPress
+                                    </span>
+                                    <span class="skill">
+                                        PrestaShop
+                                    </span>
+                                    <span class="skill">
+                                        Elementor
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="skillset">
+                                    <h3>
+                                        Design
+                                    </h3>
+                                    <span class="skill">
+                                        Affinity&nbspDesigner
+                                    </span>
+                                    <span class="skill">
+                                        Affinity&nbspPhoto
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                        
+                    </div>                 
+                </div>
+            </div>
+
+            <div id="contact">
+                <div class="container fade-in">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2>
+                                Contact Me
+                                <hr>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>
+                                Always happy to collaborate so do not hesitate to contact me for any query.
+                            </p>
+                            <a href="mailto:filipposmedile@live.it" class="email-link">
+                                filipposmedile@live.it
+                            </a>
+                            <br><br>
+                            <a href="https://github.com/filipposmedile" >
+                                <img src="images/icons/github.svg" class="portfolio-img-icon scale" alt="github">
+                            </a>
+                            <a href="linkedin.com/in/filippo-smedile-2b4674223" >
+                                <img src="images/icons/linkedin.svg" class="portfolio-img-icon scale" alt="github">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <footer>
+                <div class="container">
+                    Filippo Smedile -  Full Stack Web Developer
+                </div>
+            </footer>
+            <div class="container">
+                <div id="up-arrow">
+                    <a href="#top">
+                        <img src="images/icons/arrowup.svg" alt="arrow" class="up-arrow">
+                    </a>
+                </div> 
+            </div>    
+            
+            <div id="loader">
+                <img src="images/logo-fs.svg" alt="Avatar" class="img-loader">  
+                <br>
+                Loading...
+            </div>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+            <script src="index.js"></script>
+        </body>
+    </html>

@@ -1,0 +1,241 @@
+@mixin flex-vertical-align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@mixin flex-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+a {
+    color: black !important;
+}
+a:hover{
+    color: black !important;
+    text-decoration: none !important;
+}
+.img-logo{
+    width: auto;
+    height: 70px;
+    box-shadow: 0 0 10px gray;
+}
+#switch-menu{
+    display: none;
+}
+#mobile-menu{
+    display: none;
+}
+#header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    z-index: 998;   
+    transition: 0.5s;
+}
+#header-links{
+    float: right;
+    height: 100%;
+    @include flex-vertical-align();
+}
+.header-link{
+    margin-left: 25px;
+}
+#logo{
+    float: left;
+    height: 100%;
+    @include flex-vertical-align();
+}
+#main-div{
+    height: calc(100vh);
+    background-image: url("images/fs-background.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#sub-main-div{
+    height: 100%;
+    width: 100%;
+    @include flex-vertical-align();
+    justify-content: flex-start;
+}
+header{
+    padding: 10px;
+    width: 100%;
+    height: 120px;
+}
+hr{
+    height: 3px;
+    background-color: black;
+}
+#portfolio{
+    padding-top:100px;
+    padding-bottom:100px;
+    background-color: rgb(240, 240, 240);
+}
+.portfolio-project{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.project-right-side{
+    @include flex-center();
+}
+.portfolio-img{
+    box-shadow: gray;
+    width: 400px;
+    max-width: 90%;
+    height: auto;
+    box-shadow: 0 0 10px gray;
+    border: 3px solid black;
+}
+.portfolio-img-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px gray;
+}
+.scale{
+    transition: 0.5s;
+}
+.scale:hover{
+    transform: scale(120%);
+}
+
+#other-projects{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @include flex-center();
+}
+.other-project{
+    margin: 20px;
+    width: 250px;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+.other-project:hover{
+    box-shadow: 0 0 10px gray;
+    border-bottom-width: 5px;
+    border-right-width: 5px;
+}
+.other-project-body{
+    padding:15px;
+}
+.other-project-header{
+    border-bottom: 2px solid black;
+}
+.other-project-img{
+    width: 100%;
+    height: auto;
+}
+#about{
+    padding-top:100px;
+    padding-bottom:100px;
+}
+.description-text{
+    columns: 2;
+}
+.description-img{
+    float: left;
+    max-width: 300px;
+    margin-right: 15px;
+}
+#description{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#skillsets{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @include flex-center();
+    text-align: center;
+    flex-wrap: wrap;
+}
+.skillset{
+    padding:15px;
+    margin:10px;
+}
+.skill{
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    padding:6px;
+    margin:3px;
+    line-height: 40px;
+}
+#contact{
+    padding-top: 125px;
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 125px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#up-arrow{
+    position: fixed;
+    left: 80%;
+    top: calc(100vh - 130px);
+    z-index: 998;
+    display: none;
+}
+
+.up-arrow{
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+    transition:0.5s;
+}
+.up-arrow:hover{
+    opacity: 1;
+}
+.fade-in{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+// LOADER
+#loader{
+    background-color: white;
+    @include flex-center();
+    flex-direction: column !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    opacity: 1;
+    transition: 0.5s;
+}
+.img-loader{
+    width: 200px;
+    height: 200px;
+    
+    animation-name: rotating;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    
+}
+
+@keyframes rotating {
+    100%{transform: rotateY(360deg);}
+    
+}
