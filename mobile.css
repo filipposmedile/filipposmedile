@@ -218,6 +218,7 @@
 
   .description-text {
     columns: 1;
+    text-align: justify;
   }
 
   .description-img {
@@ -232,7 +233,6 @@
   }
 
   #skillsets {
-    padding-top: 15px;
     padding-bottom: 15px;
     display: flex;
     flex-direction: row;

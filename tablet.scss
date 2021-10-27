@@ -152,6 +152,7 @@ hr{
 }
 .description-text{
     columns: 1;
+    text-align: justify;
 }
 .description-img{
     float: left;
@@ -163,7 +164,6 @@ hr{
     padding-bottom: 25px;
 }
 #skillsets{
-    padding-top: 25px;
     padding-bottom: 25px;
     @include flex-center();
     text-align: center;
