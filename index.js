@@ -2,11 +2,11 @@
 $(window).on('scroll',function(){
     let scrollPoint = $(window).scrollTop();
     if(scrollPoint > 0){
-        $('#header').css('background-color','#d3d3d380');
-        $('#mobile-menu').css('background-color','#d3d3d380');
+        $('#header').css({'background-color':'white'});
+        $('#mobile-menu').css('background-color','#white');
         
     } else {
-        $('#header').css('background-color','transparent');
+        $('#header').css({'background-color':'transparent'});
         $('#mobile-menu').css('background-color','white');
     }
     let height = $(window).outerHeight();
