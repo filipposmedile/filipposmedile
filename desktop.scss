@@ -119,17 +119,20 @@ hr{
     padding-top: 25px;
     padding-bottom: 25px;
     @include flex-center();
+    flex-wrap: wrap;
 }
 .other-project{
     margin: 20px;
-    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 230px;
     border: 2px solid black;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .other-project:hover{
-    box-shadow: 0 0 10px gray;
-    border-bottom-width: 5px;
-    border-right-width: 5px;
+    box-shadow: 0 0 10px 5px gray;
 }
 .other-project-body{
     padding:15px;
