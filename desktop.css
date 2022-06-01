@@ -7,7 +7,11 @@ body {
 }
 
 a {
+  border: none;
   color: black !important;
+  transition: 1s;
+  padding: 0px 5px;
+  border-bottom-left-radius: 8px;
 }
 
 a:hover {
@@ -17,7 +21,7 @@ a:hover {
 
 .img-logo {
   width: auto;
-  height: 60px;
+  height: 70px;
 }
 
 #switch-menu {
@@ -267,15 +271,18 @@ footer {
 .img-loader {
   width: 200px;
   height: 200px;
+  transform: translateX(-300px);
   animation-name: rotating;
   animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  opacity: 0;
 }
 
 @keyframes rotating {
   100% {
-    transform: rotateY(360deg);
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 

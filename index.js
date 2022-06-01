@@ -2,12 +2,12 @@
 $(window).on('scroll',function(){
     let scrollPoint = $(window).scrollTop();
     if(scrollPoint > 0){
-        $('#header').css({'background-color':'white'});
-        $('#mobile-menu').css('background-color','#white');
+        $('#header').css({'background-color':'white','border-bottom':'2px solid black','box-shadow':'0 0 10px gray'});
+        $('#mobile-menu').css({'background-color':'white','border-bottom':'2px solid black','box-shadow':'0 0 10px gray'});
         
     } else {
-        $('#header').css({'background-color':'transparent'});
-        $('#mobile-menu').css('background-color','white');
+        $('#header').css({'background-color':'transparent','border-bottom':'none','box-shadow':'none'});
+        $('#mobile-menu').css({'background-color':'white','border-bottom':'none','box-shadow':'none'});
     }
     let height = $(window).outerHeight();
     $('.fade-in').each(function(i){

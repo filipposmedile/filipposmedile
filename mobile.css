@@ -306,17 +306,20 @@
   }
 
   .img-loader {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    transform: translateX(-150px);
     animation-name: rotating;
     animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    opacity: 0;
   }
 
   @keyframes rotating {
     100% {
-      transform: rotateY(360deg);
+      transform: translateX(0px);
+      opacity: 1;
     }
   }
 }
