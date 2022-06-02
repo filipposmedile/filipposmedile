@@ -56,10 +56,10 @@
   #mobile-menu {
     display: block;
     position: fixed;
-    top: -160px;
+    top: -180px;
     left: 0;
     width: 100%;
-    height: 160px;
+    height: 180px;
     transition: 0.5s;
     display: flex;
     flex-direction: row;
@@ -67,6 +67,8 @@
     flex-direction: column !important;
     background-color: white;
     z-index: 997;
+    padding: 10px 0;
+    border-bottom: 2px solid black;
   }
 
   .header-link-mobile {
@@ -81,6 +83,8 @@
     left: 0;
     z-index: 998;
     transition: 0.5s;
+    border-bottom: 2px solid black;
+    background-color: white;
   }
 
   #header-links {

@@ -1,13 +1,13 @@
 //HEADER
 $(window).on('scroll',function(){
     let scrollPoint = $(window).scrollTop();
+    if($(window).width() > 500){
     if(scrollPoint > 0){
-        $('#header').css({'background-color':'white','border-bottom':'2px solid black','box-shadow':'0 0 10px gray'});
-        $('#mobile-menu').css({'background-color':'white','border-bottom':'2px solid black','box-shadow':'0 0 10px gray'});
-        
-    } else {
-        $('#header').css({'background-color':'transparent','border-bottom':'none','box-shadow':'none'});
-        $('#mobile-menu').css({'background-color':'white','border-bottom':'none','box-shadow':'none'});
+            $('#header').css({'background-color':'white','border-bottom':'2px solid black','box-shadow':'0 0 10px gray'});
+            
+        } else {
+            $('#header').css({'background-color':'transparent','border-bottom':'none','box-shadow':'none'});
+        }
     }
     let height = $(window).outerHeight();
     $('.fade-in').each(function(i){
@@ -40,7 +40,7 @@ function menuToggle(){
     var line1 = $('#line-1');
     var line2 = $('#line-2');
     var line3 = $('#line-3');
-    if(menu.css('transform') == 'matrix(1, 0, 0, 1, 0, 230)'){
+    if(menu.css('transform') == 'matrix(1, 0, 0, 1, 0, 240)'){
 
         menu.css('transform','translateY(0px)');
 
@@ -52,7 +52,7 @@ function menuToggle(){
         line1.css({'transform':'rotate(47deg)','width':'50px','top':'25px'});
         line2.css('opacity','0');
         line3.css({'transform':'rotate(-47deg)','width':'50px','top':'25px'});
-        menu.css('transform','translateY(230px)');
+        menu.css('transform','translateY(240px)');
 
     }
 }
